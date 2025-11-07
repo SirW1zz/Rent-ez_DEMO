@@ -1,0 +1,21 @@
+{
+  "name": "rent-ez-marketplace",
+  "version": "1.0.0",
+  "description": "A rental marketplace web application with AI-powered matching",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "test": "cd server && npm test && cd ../client && npm test"
+  },
+  "keywords": ["rental", "marketplace", "ai-matching", "react", "nodejs"],
+  "author": "Rent-ez Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
